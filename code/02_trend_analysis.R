@@ -183,7 +183,7 @@ trend
 
 # saving plots as png and pdf
 
-ggsave("./plots/02_trends.png", trend,  height = 10, width = 20)
+ggsave("./plots/02_trends.tif", trend,  height = 10, width = 20)
 ggsave("./plots/02_trends.pdf", trend,  height = 10, width = 20)
 
 

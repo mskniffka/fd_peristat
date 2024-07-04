@@ -1,7 +1,7 @@
 # R-code for Stillbirth Rates across Europe between 2010 and 2021: The Contribution of Maternal Age and Multiplicity
 # code by Maxi S. Kniffka
 
-# Calculation and plot of decomposition over time (trends), calculation and plot of decomposition between countries for 2021
+# Calculation of decomposition over time (trends), calculation and plot of decomposition between countries for 2021
 
 # preparation ------------------------------------------------------------------
 library(tidyverse)

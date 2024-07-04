@@ -1,4 +1,10 @@
+# R-code for Stillbirth Rates across Europe between 2010 and 2021: The Contribution of Maternal Age and Multiplicity
+# code by Maxi S. Kniffka
 
+# Plot of decomposition over time (trends), calculation and plot of decomposition between countries for 2021
+
+# preparation ------------------------------------------------------------------
+library(tidyverse)
 
 age_and_multi <- read_rds("./dat_out/decomposition_time.rds")
 age_and_multi_table <- read_rds("./dat_out/decomposition_time_table.rds")
@@ -165,7 +171,7 @@ dekompo_arrow_a_m_ave <- ggplot(age_and_multi_ave) +
   
   scale_y_continuous(breaks = c(2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44, 47, 50, 53, 56, 59, 62, 65, 68, 71),
                      labels = c("Finland", "Estonia", "Slovenia", "Norway", "Spain", "Italy", "Denmark", "Sweden", "Malta", "Switzerland", "Austria",
-                                "Netherlands", "Czech Rep.", "Croatia", "Poland", "Lithuania", "Iceland", "UK", "Germany",
+                                "Netherlands", "Czech Rep.", "Croatia", "Poland", "Lithuania", "UK", "Germany", "Iceland",
                                 "Ireland", "France", "Cyprus", "Latvia", "Belgium"))+
   geom_hline(yintercept=c(3.4,6.4,9.4,12.4,15.4,18.4,21.4,24.4,27.4,30.4,33.4,36.4,39.4,42.4,45.4,48.4,51.4, 54.4, 57.4, 60.4, 63.4, 66.4, 69.4, 72.4), color = "grey90") +
   theme_classic(9,base_line_size = 0.2) +
